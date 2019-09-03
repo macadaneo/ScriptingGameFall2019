@@ -10,6 +10,7 @@
           <e p="FirstClass.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="Bomb.cs" t="Include" />
           <e p="StartBehavior.cs" t="Include" />
           <e p="StartScript.cs" t="Include" />
           <e p="VarsClass.cs" t="Include" />
