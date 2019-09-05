@@ -7,10 +7,10 @@ using UnityEngine.Events;
 public class VarsClass : MonoBehaviour
 {
 
-    public float floatValue;
-    public int intValue;
+    public float floatValue = 10f;
+    public int intValue = 10;
     public string stringValue = "bob";
-    public int firePower;
+    public int firePower = 10;
     public UnityEvent Event;
     
     private void OnTriggerEnter(Collider other)
