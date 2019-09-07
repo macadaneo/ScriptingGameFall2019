@@ -10,6 +10,7 @@ public class Bomb : MonoBehaviour
     public UnityEvent Event;
     public float delay = 3f;
     private float countdown;
+    private bool hasExploded = false;
     private void OnCollisionEnter(Collision other)
     {
         Event.Invoke();
@@ -25,9 +26,10 @@ public class Bomb : MonoBehaviour
     void Update()
     {
         countdown -= Time.deltaTime;
-        if (countdown <= 0f)
+        if (countdown <= 0f && !hasExploded)
         {
             Explode();
+            hasExploded = true;
         }
     }
 
