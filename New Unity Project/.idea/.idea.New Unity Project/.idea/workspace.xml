@@ -31,16 +31,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bomb.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+            <state relative-caret-position="603">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
               <folding>
-                <marker date="1567833933405" expanded="false" signature="6:148" ph="..." />
-                <marker date="1567833933405" expanded="true" signature="183:808" ph="{...}" />
-                <marker date="1567833933405" expanded="true" signature="361:397" ph="{...}" />
-                <marker date="1567833933405" expanded="true" signature="468:507" ph="{...}" />
-                <marker date="1567833933405" expanded="true" signature="565:734" ph="{...}" />
-                <marker date="1567833933405" expanded="true" signature="653:728" ph="{...}" />
-                <marker date="1567833933405" expanded="true" signature="754:806" ph="{...}" />
+                <marker date="1568008607825" expanded="false" signature="6:148" ph="..." />
+                <marker date="1568008607825" expanded="true" signature="183:1081" ph="{...}" />
+                <marker date="1568008607825" expanded="true" signature="400:436" ph="{...}" />
+                <marker date="1568008607825" expanded="true" signature="507:546" ph="{...}" />
+                <marker date="1568008607825" expanded="true" signature="604:773" ph="{...}" />
+                <marker date="1568008607825" expanded="true" signature="692:767" ph="{...}" />
+                <marker date="1568008607825" expanded="true" signature="793:1079" ph="{...}" />
+                <marker date="1568008607825" expanded="true" signature="956:1023" ph="/* get nearby objects. ... */" />
               </folding>
             </state>
           </provider>
@@ -69,10 +70,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-16" />
-    <option name="width" value="1948" />
-    <option name="height" value="2076" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="232" />
+    <option name="y" value="202" />
+    <option name="width" value="2426" />
+    <option name="height" value="1890" />
   </component>
   <component name="ProjectId" id="1Q7C9BInF7JjdeJYi3KFfBV7Wc6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -134,12 +136,12 @@
       <workItem from="1567543442726" duration="3196000" />
       <workItem from="1567660841437" duration="628000" />
       <workItem from="1567749160213" duration="370000" />
-      <workItem from="1567833825496" duration="108000" />
+      <workItem from="1567833825496" duration="506000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1106000" />
+    <option name="totallyTimeSpent" value="1504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -151,7 +153,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
+    <frame x="116" y="101" width="1213" height="945" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
@@ -254,16 +256,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bomb.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="28" column="44" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="28" selection-end-column="44" />
+        <state relative-caret-position="603">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
           <folding>
-            <marker date="1567833933405" expanded="false" signature="6:148" ph="..." />
-            <marker date="1567833933405" expanded="true" signature="183:808" ph="{...}" />
-            <marker date="1567833933405" expanded="true" signature="361:397" ph="{...}" />
-            <marker date="1567833933405" expanded="true" signature="468:507" ph="{...}" />
-            <marker date="1567833933405" expanded="true" signature="565:734" ph="{...}" />
-            <marker date="1567833933405" expanded="true" signature="653:728" ph="{...}" />
-            <marker date="1567833933405" expanded="true" signature="754:806" ph="{...}" />
+            <marker date="1568008607825" expanded="false" signature="6:148" ph="..." />
+            <marker date="1568008607825" expanded="true" signature="183:1081" ph="{...}" />
+            <marker date="1568008607825" expanded="true" signature="400:436" ph="{...}" />
+            <marker date="1568008607825" expanded="true" signature="507:546" ph="{...}" />
+            <marker date="1568008607825" expanded="true" signature="604:773" ph="{...}" />
+            <marker date="1568008607825" expanded="true" signature="692:767" ph="{...}" />
+            <marker date="1568008607825" expanded="true" signature="793:1079" ph="{...}" />
+            <marker date="1568008607825" expanded="true" signature="956:1023" ph="/* get nearby objects. ... */" />
           </folding>
         </state>
       </provider>

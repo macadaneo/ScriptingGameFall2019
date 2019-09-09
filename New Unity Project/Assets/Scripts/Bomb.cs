@@ -11,6 +11,7 @@ public class Bomb : MonoBehaviour
     public float delay = 3f;
     private float countdown;
     private bool hasExploded = false;
+    public GameObject explosionEffect;
     private void OnCollisionEnter(Collision other)
     {
         Event.Invoke();
@@ -36,5 +37,12 @@ public class Bomb : MonoBehaviour
     void Explode()
         {
             Debug.Log("Boom!");
+            //show effect
+            Instantiate(explosionEffect, transform.position, transform.rotation);
+            // get nearby objects.
+            //add force
+            //damage
+            
+            Destroy(gameObject);
         }
 }
