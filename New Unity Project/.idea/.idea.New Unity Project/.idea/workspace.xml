@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c931a2c3-8b02-48b8-9a02-9c5e3539362b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/ScriptingGame1610Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/ScriptingGame1610Scene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bomb.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bomb.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,17 +32,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bomb.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="467">
+              <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
               <folding>
-                <marker date="1568008607825" expanded="false" signature="6:148" ph="..." />
-                <marker date="1568008607825" expanded="true" signature="183:1081" ph="{...}" />
-                <marker date="1568008607825" expanded="true" signature="400:436" ph="{...}" />
-                <marker date="1568008607825" expanded="true" signature="507:546" ph="{...}" />
-                <marker date="1568008607825" expanded="true" signature="604:773" ph="{...}" />
-                <marker date="1568008607825" expanded="true" signature="692:767" ph="{...}" />
-                <marker date="1568008607825" expanded="true" signature="793:1079" ph="{...}" />
-                <marker date="1568008607825" expanded="true" signature="956:1023" ph="/* get nearby objects. ... */" />
+                <marker date="1568008769571" expanded="false" signature="6:148" ph="..." />
+                <marker date="1568008769571" expanded="true" signature="183:1089" ph="{...}" />
+                <marker date="1568008769571" expanded="true" signature="400:436" ph="{...}" />
+                <marker date="1568008769571" expanded="true" signature="507:546" ph="{...}" />
+                <marker date="1568008769571" expanded="true" signature="604:773" ph="{...}" />
+                <marker date="1568008769571" expanded="true" signature="692:767" ph="{...}" />
+                <marker date="1568008769571" expanded="true" signature="801:1087" ph="{...}" />
+                <marker date="1568008769571" expanded="true" signature="964:1031" ph="/* get nearby objects. ... */" />
               </folding>
             </state>
           </provider>
@@ -136,12 +137,12 @@
       <workItem from="1567543442726" duration="3196000" />
       <workItem from="1567660841437" duration="628000" />
       <workItem from="1567749160213" duration="370000" />
-      <workItem from="1567833825496" duration="506000" />
+      <workItem from="1567833825496" duration="1084000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1504000" />
+    <option name="totallyTimeSpent" value="2082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -154,7 +155,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="116" y="101" width="1213" height="945" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -256,17 +256,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Bomb.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="467">
+          <caret line="40" column="62" selection-start-line="40" selection-start-column="62" selection-end-line="40" selection-end-column="62" />
           <folding>
-            <marker date="1568008607825" expanded="false" signature="6:148" ph="..." />
-            <marker date="1568008607825" expanded="true" signature="183:1081" ph="{...}" />
-            <marker date="1568008607825" expanded="true" signature="400:436" ph="{...}" />
-            <marker date="1568008607825" expanded="true" signature="507:546" ph="{...}" />
-            <marker date="1568008607825" expanded="true" signature="604:773" ph="{...}" />
-            <marker date="1568008607825" expanded="true" signature="692:767" ph="{...}" />
-            <marker date="1568008607825" expanded="true" signature="793:1079" ph="{...}" />
-            <marker date="1568008607825" expanded="true" signature="956:1023" ph="/* get nearby objects. ... */" />
+            <marker date="1568008769571" expanded="false" signature="6:148" ph="..." />
+            <marker date="1568008769571" expanded="true" signature="183:1089" ph="{...}" />
+            <marker date="1568008769571" expanded="true" signature="400:436" ph="{...}" />
+            <marker date="1568008769571" expanded="true" signature="507:546" ph="{...}" />
+            <marker date="1568008769571" expanded="true" signature="604:773" ph="{...}" />
+            <marker date="1568008769571" expanded="true" signature="692:767" ph="{...}" />
+            <marker date="1568008769571" expanded="true" signature="801:1087" ph="{...}" />
+            <marker date="1568008769571" expanded="true" signature="964:1031" ph="/* get nearby objects. ... */" />
           </folding>
         </state>
       </provider>

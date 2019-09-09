@@ -34,7 +34,7 @@ public class Bomb : MonoBehaviour
         }
     }
 
-    void Explode()
+    private void Explode()
         {
             Debug.Log("Boom!");
             //show effect
