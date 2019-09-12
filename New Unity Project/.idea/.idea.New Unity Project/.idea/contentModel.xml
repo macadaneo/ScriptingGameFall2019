@@ -8,7 +8,11 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Bomb.cs" t="Include" />
+          <e p="CatClass.cs" t="Include" />
+          <e p="DogClass.cs" t="Include" />
           <e p="floatData.cs" t="Include" />
+          <e p="MouseEvents.cs" t="Include" />
+          <e p="ParticleControl.cs" t="Include" />
           <e p="StartBehavior.cs" t="Include" />
           <e p="StartScript.cs" t="Include" />
           <e p="TriggerEvents.cs" t="Include" />
