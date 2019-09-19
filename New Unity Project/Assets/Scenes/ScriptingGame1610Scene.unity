@@ -645,7 +645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627723304}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.71, y: 2.65, z: 0}
+  m_LocalPosition: {x: -4.71, y: 2.65, z: -2.29}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1561,8 +1561,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gravity: 6
   speed: 20
-  jumpSpeed: 55
-  controller: {fileID: 1106163306}
+  jumpSpeed: 60
 --- !u!136 &1106163302
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -6681,6 +6680,42 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300437512466891555, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300437512466891555, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300437512466891555, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300437512466891555, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: f668546c410a7b748b70e707012f4b12,
+        type: 2}
+    - target: {fileID: 2300437512466891555, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateValue
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300437512466891555, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300437512466891555, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: -0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8778bd2dbfbd4044875f728be72eaa6, type: 3}

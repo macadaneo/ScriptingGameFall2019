@@ -33,6 +33,7 @@ public class Bomb : MonoBehaviour
             hasExploded = true;
         }
     }
+    
 
     private void Explode()
         {
