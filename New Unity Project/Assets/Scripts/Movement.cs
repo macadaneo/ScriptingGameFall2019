@@ -2,9 +2,9 @@
 
 public class Movement : MonoBehaviour
 {
-    public float gravity = 9.81f;
-    public float speed = 1f;
-    public float jumpSpeed = 75f;
+    public float gravity = 6f;
+    public float speed = 20f;
+    public float jumpSpeed = 45f;
     private int jumpCount = 2;
     
     private Vector3 position;
