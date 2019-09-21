@@ -288,6 +288,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   delay: 3
+  countdown: 0
+  hasExploded: 0
+  inDanger: 0
   explosionEffect: {fileID: 8305489546862967156, guid: f37a1f0528d33044ab296b660e6e8ff1,
     type: 3}
 --- !u!135 &241485971
@@ -735,6 +738,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   delay: 3
+  countdown: 0
+  hasExploded: 0
+  inDanger: 0
   explosionEffect: {fileID: 8305489546862967156, guid: 7f289b855499da345bc3af2a95f2f4d1,
     type: 3}
 --- !u!135 &715990315
@@ -985,6 +991,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   delay: 3
+  countdown: 0
+  hasExploded: 0
+  inDanger: 0
   explosionEffect: {fileID: 8305489546862967156, guid: 49d0213b22a9f5247961c2ba9b9d583a,
     type: 3}
 --- !u!135 &808362783
@@ -1247,7 +1256,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 876049824}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.92, y: 2.0270038, z: -0.01}
+  m_LocalPosition: {x: 11.49, y: 0.94, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1629,7 +1638,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1106163300}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.26, y: 2.83745, z: 0.09581566}
+  m_LocalPosition: {x: 12.93, y: 2.83745, z: 0.09581566}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 470572170}
@@ -6629,7 +6638,7 @@ PrefabInstance:
     - target: {fileID: 2300437512466891567, guid: a8778bd2dbfbd4044875f728be72eaa6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.53
+      value: 17.51
       objectReference: {fileID: 0}
     - target: {fileID: 2300437512466891567, guid: a8778bd2dbfbd4044875f728be72eaa6,
         type: 3}
@@ -6717,7 +6726,23 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
       value: -0.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2300437512466891552, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300437512466891556, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300437512466891556, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 2300437512466891557, guid: a8778bd2dbfbd4044875f728be72eaa6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a8778bd2dbfbd4044875f728be72eaa6, type: 3}
 --- !u!1001 &7905135649720528218
 PrefabInstance:
@@ -6786,5 +6811,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7905135648321025293, guid: f6993c8eeaec2f34aa22e1328a07fe4d, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f6993c8eeaec2f34aa22e1328a07fe4d, type: 3}

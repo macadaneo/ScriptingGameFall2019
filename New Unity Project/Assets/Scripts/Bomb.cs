@@ -8,21 +8,27 @@ using Object = System.Object;
 public class Bomb : MonoBehaviour
 {
     public UnityEvent Event;
-    public float delay = 3f;
-    private float countdown;
-    private bool hasExploded = false;
+    public float delay = 3f, countdown;
+    public bool hasExploded = false, inDanger = false;
     public GameObject explosionEffect;
-    private void OnCollisionEnter(Collision other)
-    {
-        Event.Invoke();
-    }
+    
 
     // Start is called before the first frame update
     void Start()
     {
         countdown = delay;
     }
-
+    
+    private void OnTriggerEnter(Collider other)
+    {
+        inDanger = true;
+    }
+    
+    private void OnTriggerExit(Collider other)
+    {
+        inDanger = false;
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -38,12 +44,8 @@ public class Bomb : MonoBehaviour
     private void Explode()
         {
             Debug.Log("Boom!");
-            //show effect
+            Event.Invoke();
             Instantiate(explosionEffect, transform.position, transform.rotation);
-            // get nearby objects.
-            //add force
-            //damage
-            
             Destroy(gameObject);
         }
 }
