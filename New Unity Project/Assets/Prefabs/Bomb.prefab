@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2300437512466891552}
   - component: {fileID: 2300437512466891555}
   - component: {fileID: 2300437512466891556}
-  - component: {fileID: 2300437512466891557}
+  - component: {fileID: 5569575459542471247}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -109,12 +109,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8305489546862967159, guid: 05ac7a1340737d641a3752ee3d418cdb,
+          type: 3}
+        m_MethodName: Emit
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 30
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   delay: 3
   countdown: 0
   hasExploded: 0
+  inDanger: 0
   explosionEffect: {fileID: 8305489546862967156, guid: 05ac7a1340737d641a3752ee3d418cdb,
     type: 3}
 --- !u!54 &2300437512466891556
@@ -133,7 +146,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2300437512466891557
+--- !u!114 &5569575459542471247
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,25 +155,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2300437512466891566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1cf9282023cade346aff501a1d53c3a5, type: 3}
+  m_Script: {fileID: 11500000, guid: 39f1ce45e41a010408bfbd85ef79f6db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: f668546c410a7b748b70e707012f4b12, type: 2}
-        m_MethodName: UpdateValue
-        m_Mode: 4
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: -0.1
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  forces: {x: 0, y: 5, z: 0}
 --- !u!1 &8915828401719676033
 GameObject:
   m_ObjectHideFlags: 0
@@ -204,7 +202,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.3189352
+  m_Radius: 2.5
   m_Center: {x: 0, y: 0, z: -0.042390108}
 --- !u!114 &2080936761919995179
 MonoBehaviour:
@@ -228,7 +226,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: -0.01
+          m_FloatArgument: -0.1
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -237,4 +235,6 @@ MonoBehaviour:
   delay: 3
   countdown: 0
   hasExploded: 0
-  explosionEffect: {fileID: 0}
+  inDanger: 0
+  explosionEffect: {fileID: 8305489546862967156, guid: 05ac7a1340737d641a3752ee3d418cdb,
+    type: 3}

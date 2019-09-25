@@ -11,26 +11,16 @@ public class Bomb : MonoBehaviour
     public float delay = 3f, countdown;
     public bool hasExploded = false, inDanger = false;
     public GameObject explosionEffect;
-    
+
 
     // Start is called before the first frame update
     private void Start()
     {
         countdown = delay;
     }
-    
-    private void OnTriggerEnter(Collider other)
-    {
-        inDanger = true;
-    }
-    
-    private void OnTriggerExit(Collider other)
-    {
-        inDanger = false;
-    }
-    
+
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         countdown -= Time.deltaTime;
         if (countdown <= 0f && !hasExploded)
@@ -40,12 +30,22 @@ public class Bomb : MonoBehaviour
         }
     }
     
+    private void OnTriggerEnter(Collider other)
+            {
+                inDanger = true;
+            }
+        
+    private void OnTriggerExit(Collider other)
+            {
+                inDanger = false;
+            }
+    
 
     private void Explode()
-        {
-            Debug.Log("Boom!");
-            Event.Invoke();
+    {
+        Debug.Log("Boom!");
             Instantiate(explosionEffect, transform.position, transform.rotation);
+            Event.Invoke();
             Destroy(gameObject);
         }
 }

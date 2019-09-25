@@ -1,25 +1,34 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using UnityEngine;
 
 public class BombAffects : Bomb
 {
-    private void OnTriggerEnter(Collider other)
+   public void start()
+    {
+        inDanger = false;
+    }
+    
+    public void OnTriggerEnter(Collider other)
         {
             inDanger = true;
         }
     
-        private void OnTriggerExit(Collider other)
+    
+    
+        public void OnTriggerExit(Collider other)
         {
             inDanger = false;
         }
 
-        private void Update()
+        public void OnDestroy()
         {
-            if (inDanger == true && hasExploded == true)
+            if (inDanger == true)
             {
                 Event.Invoke();
+                Debug.Log("Damage delt to character.");
             }
         }
 }
