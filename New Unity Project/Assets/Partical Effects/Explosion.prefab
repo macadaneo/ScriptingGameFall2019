@@ -749,7 +749,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 20.130245
       mode: 0
       spread: 0
       speed:
@@ -3561,7 +3561,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 3
     type: 0
     collisionMode: 0
@@ -4836,11 +4836,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8305489546862967157}
     m_Modifications:
-    - target: {fileID: 1203172275672424820, guid: 41bc6487ddf96a140997f6eb8ce66874,
-        type: 3}
-      propertyPath: m_Name
-      value: smoke
-      objectReference: {fileID: 0}
     - target: {fileID: 6592556563550524799, guid: 41bc6487ddf96a140997f6eb8ce66874,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4896,6 +4891,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1203172275672424820, guid: 41bc6487ddf96a140997f6eb8ce66874,
+        type: 3}
+      propertyPath: m_Name
+      value: smoke
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990665583645447492, guid: 41bc6487ddf96a140997f6eb8ce66874,
+        type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990665583645447492, guid: 41bc6487ddf96a140997f6eb8ce66874,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 0.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990665583645447492, guid: 41bc6487ddf96a140997f6eb8ce66874,
+        type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2990665583645447492, guid: 41bc6487ddf96a140997f6eb8ce66874,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41bc6487ddf96a140997f6eb8ce66874, type: 3}
 --- !u!4 &6207724260608531757 stripped
@@ -4911,11 +4931,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8305489546862967157}
     m_Modifications:
-    - target: {fileID: 2807059464145187257, guid: 62ea72aaa4487ce41a7bff8222688dfd,
-        type: 3}
-      propertyPath: m_Name
-      value: Flash
-      objectReference: {fileID: 0}
     - target: {fileID: 6021413777901066961, guid: 62ea72aaa4487ce41a7bff8222688dfd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4970,6 +4985,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2807059464145187257, guid: 62ea72aaa4487ce41a7bff8222688dfd,
+        type: 3}
+      propertyPath: m_Name
+      value: Flash
       objectReference: {fileID: 0}
     - target: {fileID: 4528942691320492845, guid: 62ea72aaa4487ce41a7bff8222688dfd,
         type: 3}

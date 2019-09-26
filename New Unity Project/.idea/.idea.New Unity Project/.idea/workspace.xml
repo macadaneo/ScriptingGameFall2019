@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="c931a2c3-8b02-48b8-9a02-9c5e3539362b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.New Unity Project/.idea/workspace.xml" afterDir="false" />
@@ -16,6 +17,9 @@
       <change beforePath="$PROJECT_DIR$/Assets/Sound.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
+=======
+    <list default="true" id="c931a2c3-8b02-48b8-9a02-9c5e3539362b" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,8 +141,12 @@
       <workItem from="1568753077571" duration="4430000" />
       <workItem from="1568863892156" duration="1016000" />
       <workItem from="1568925344975" duration="4737000" />
+<<<<<<< Updated upstream
       <workItem from="1569357868699" duration="3841000" />
       <workItem from="1569380520797" duration="7697000" />
+=======
+      <workItem from="1569357868699" duration="3922000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
