@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 7384433751724716272}
   - component: {fileID: 9071589734012695658}
   - component: {fileID: 799490603294547604}
-  - component: {fileID: 1840589813103344273}
   m_Layer: 0
   m_Name: Torch
   m_TagString: Untagged
@@ -79,20 +78,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &1840589813103344273
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1864855691564903353}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1001 &7610605088237180381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -174,6 +159,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.34993953
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979561643835404841, guid: 2cff5a8decad4e14d804aee62796fffe,
+        type: 3}
+      propertyPath: m_Range
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979561643835404841, guid: 2cff5a8decad4e14d804aee62796fffe,
+        type: 3}
+      propertyPath: m_DrawHalo
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5979561643835404841, guid: 2cff5a8decad4e14d804aee62796fffe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2cff5a8decad4e14d804aee62796fffe, type: 3}

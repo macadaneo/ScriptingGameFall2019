@@ -25,6 +25,7 @@ public class Funtions : MonoBehaviour
         newPlayer.transform.position = Vector3.zero;
         newPlayer.name = playerName;
         newPlayer.GetComponent<Renderer>().material.color = playerColor;
+       // newPlayer.GetComponent<FloatData>().value.
         
         return newPlayer;
     }
