@@ -474,6 +474,10 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1928490276}
+    - target: {fileID: 118342347, guid: 37b3a34b946a7aa4e9892a26fc0e6f7a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateValueRange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b3a34b946a7aa4e9892a26fc0e6f7a, type: 3}
 --- !u!1 &170755884
@@ -880,7 +884,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: f668546c410a7b748b70e707012f4b12, type: 2}
-        m_MethodName: UpdateValue
+        m_MethodName: UpdateValueRange
         m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3782,6 +3786,10 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1928490276}
+    - target: {fileID: 118342347, guid: 37b3a34b946a7aa4e9892a26fc0e6f7a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateValueRange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b3a34b946a7aa4e9892a26fc0e6f7a, type: 3}
 --- !u!1001 &1293599303
@@ -5619,7 +5627,7 @@ PrefabInstance:
     - target: {fileID: 2300437512466891555, guid: a8778bd2dbfbd4044875f728be72eaa6,
         type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2300437512466891555, guid: a8778bd2dbfbd4044875f728be72eaa6,
         type: 3}
@@ -5656,6 +5664,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
       value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2080936761919995179, guid: a8778bd2dbfbd4044875f728be72eaa6,
+        type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateValueRange
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8778bd2dbfbd4044875f728be72eaa6, type: 3}
@@ -6093,6 +6106,10 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1928490276}
+    - target: {fileID: 118342347, guid: 37b3a34b946a7aa4e9892a26fc0e6f7a, type: 3}
+      propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateValueRange
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37b3a34b946a7aa4e9892a26fc0e6f7a, type: 3}
 --- !u!1001 &6711895905492810054
