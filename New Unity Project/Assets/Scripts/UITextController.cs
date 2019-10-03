@@ -6,16 +6,14 @@ using UnityEngine.UI;
 public class UITextController : MonoBehaviour
 {
     private Text textLabel;
-    public UnityEvent startEvent;
-    
+
     public void UpdateText(IntData data)
     {
         textLabel.text = data.value.ToString();
     }
 
-    void Start()
+    void Awake()
     {
         textLabel = GetComponent<Text>();
-        startEvent.Invoke();
     }
 }

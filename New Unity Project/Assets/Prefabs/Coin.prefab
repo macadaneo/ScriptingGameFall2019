@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3793475367752440377}
   - component: {fileID: 3104459204638663020}
   - component: {fileID: 5555341939050714183}
+  - component: {fileID: 9022915427715113242}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -196,3 +197,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0056930cd348aa74f9befb5fd3ed8096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &9022915427715113242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240989350866238262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cf9282023cade346aff501a1d53c3a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  collectibleEffect: {fileID: 3206091921355984474, guid: fcedf0df2c87db64fadc63baa1ba544b,
+    type: 3}
