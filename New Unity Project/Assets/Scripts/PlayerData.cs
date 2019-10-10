@@ -6,8 +6,12 @@ using UnityEngine;
 public class PlayerData : GameArtData
 {
 
-   public WeaponData weapon;
-   
+   public List<WeaponData> weapon;
+   public ClothsData shirt;
+   public ClothsData pants;
+   public FloatData health;
+
+
    public void InstancePlayer()
    {
       var newPlayer = Instantiate(prefab);

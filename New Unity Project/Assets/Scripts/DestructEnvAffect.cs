@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DistructEnvAffect : DistructibleEnv
+public class DestructEnvAffect : DestructibleEnv
 {
     public void start()
         {
@@ -21,7 +21,7 @@ public class DistructEnvAffect : DistructibleEnv
                 Distructable = false;
             }
     
-            public void OnDestroy()
+            public void OnDisable()
             {
                 if (Distructable == true)
                 {

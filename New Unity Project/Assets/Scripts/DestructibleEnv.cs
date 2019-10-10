@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
 
-public class DistructibleEnv : MonoBehaviour
+public class DestructibleEnv : MonoBehaviour
 {
   public UnityEvent Event;
   public bool Distructable = false;
-  private ParticleSystem rubble;
+  public ParticleSystem rubble;
   private void OnTriggerEnter(Collider other)
   {
     Distructable = true;
@@ -22,6 +22,5 @@ public class DistructibleEnv : MonoBehaviour
   private void OnDestroy()
   {
     Instantiate(rubble, transform.position, transform.rotation);
-    Destroy(rubble);
   }
 }
