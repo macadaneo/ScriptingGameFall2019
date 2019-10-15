@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu]
 public class PlayerData : GameArtData
 {
+   public UnityAction<GameObject> instanceAction;
 
    public List<WeaponData> weapon;
    public ClothsData shirt;
@@ -18,6 +20,7 @@ public class PlayerData : GameArtData
 
       var newSprite = newPlayer.GetComponentInChildren<SpriteRenderer>();
       newSprite.sprite = sprite;
-      newSprite.color = color;
+      newSprite.color = spriteColor;
+      instanceAction(newPlayer);
    }
 }
