@@ -234,6 +234,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   Distructable: 0
+  rubble: {fileID: 0}
 --- !u!1 &8915828401719676033
 GameObject:
   m_ObjectHideFlags: 0
