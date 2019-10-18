@@ -4436,6 +4436,7 @@ GameObject:
   - component: {fileID: 1633918340}
   - component: {fileID: 1633918339}
   - component: {fileID: 1633918338}
+  - component: {fileID: 1633918343}
   m_Layer: 11
   m_Name: DestructWall
   m_TagString: Untagged
@@ -4546,6 +4547,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1633918343
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633918337}
+  serializedVersion: 2
+  m_Mass: 0.0000001
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!4 &1655692701 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7384433751724716272, guid: dfc712bc9d959af4c99a8b82553b84ce,
