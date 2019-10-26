@@ -15,6 +15,10 @@
           <e p="CineMachineController.cs" t="Include" />
           <e p="ClothsData.cs" t="Include" />
           <e p="Collectible.cs" t="Include" />
+          <e p="Collections" t="Include">
+            <e p="GameArtCollection.cs" t="Include" />
+            <e p="Lists.cs" t="Include" />
+          </e>
           <e p="DestructEnvAffect.cs" t="Include" />
           <e p="DestructibleEnv.cs" t="Include" />
           <e p="DogClass.cs" t="Include" />
