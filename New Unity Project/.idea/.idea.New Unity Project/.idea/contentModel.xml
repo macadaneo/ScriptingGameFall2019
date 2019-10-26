@@ -9,7 +9,6 @@
         <e p="Scripts" t="Include">
           <e p="ApplyForce.cs" t="Include" />
           <e p="Bomb.cs" t="Include" />
-          <e p="BombAffects.cs" t="Include" />
           <e p="CameraFollow.cs" t="Include" />
           <e p="CatClass.cs" t="Include" />
           <e p="CineMachineController.cs" t="Include" />
@@ -19,8 +18,7 @@
             <e p="GameArtCollection.cs" t="Include" />
             <e p="Lists.cs" t="Include" />
           </e>
-          <e p="DestructEnvAffect.cs" t="Include" />
-          <e p="DestructibleEnv.cs" t="Include" />
+          <e p="Destructible.cs" t="Include" />
           <e p="DogClass.cs" t="Include" />
           <e p="floatData.cs" t="Include" />
           <e p="Funtions.cs" t="Include" />

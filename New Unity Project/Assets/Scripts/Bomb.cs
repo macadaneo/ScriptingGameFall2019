@@ -9,9 +9,9 @@ public class Bomb : MonoBehaviour
 {
     public UnityEvent Event;
     public float delay = 3f, countdown;
-    public bool hasExploded = false, inDanger = false;
     public GameObject explosionEffect;
-
+    public bool hasExploded = false;
+    public float blastRadius = 5f, force = 700f;
 
     // Start is called before the first frame update
     private void Start()
@@ -30,22 +30,28 @@ public class Bomb : MonoBehaviour
         }
     }
     
-    private void OnTriggerEnter(Collider other)
-            {
-                inDanger = true;
-            }
-        
-    private void OnTriggerExit(Collider other)
-            {
-                inDanger = false;
-            }
-    
-
     private void Explode()
     {
         Debug.Log("Boom!");
             Instantiate(explosionEffect, transform.position, transform.rotation);
-            Event.Invoke();
+
+            Collider[] colliders = Physics.OverlapSphere(transform.position, blastRadius);
+
+            foreach (Collider nearbyObject in colliders)
+            {
+                Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.AddExplosionForce(force, transform.position, blastRadius);
+                }
+
+                Destructible dest = nearbyObject.GetComponent<Destructible>();
+                if (dest != null)
+                {
+                    dest.Destruct();
+                }
+            }
+               
             Destroy(gameObject);
         }
 }
