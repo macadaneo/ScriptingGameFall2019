@@ -4314,7 +4314,7 @@ GameObject:
   - component: {fileID: 1633918343}
   - component: {fileID: 1633918338}
   - component: {fileID: 1633918339}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: DestructWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
