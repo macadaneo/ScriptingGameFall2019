@@ -8,6 +8,8 @@ public class PlayerData : GameArtData
 {
    public UnityAction<GameObject> instanceAction;
 
+   public UnityEvent OnRunEvent;
+
    public List<WeaponData> weapon;
    public ClothsData shirt;
    public ClothsData pants;
