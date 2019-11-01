@@ -25,4 +25,9 @@ public class PlayerData : GameArtData
       newSprite.color = spriteColor;
       instanceAction(newPlayer);
    }
+
+   public void Run()
+   {
+      OnRunEvent.Invoke();
+   }
 }

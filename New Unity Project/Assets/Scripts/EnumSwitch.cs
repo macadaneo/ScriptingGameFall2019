@@ -16,7 +16,7 @@ public class EnumSwitch : MonoBehaviour
     public States currentState;
 
     public UnityEvent OnStartEvent, OnPlayingEvent, OnEndEvent;
-    
+
     // Update is called once per frame
     void Update()
     {

@@ -6,12 +6,12 @@ public class DebuggerHandler : MonoBehaviour
 {
     public Debugger debuggerObj;
 
-    private void Start()
+    public void SwitchDebugger(Debugger newDebuggerObj)
     {
-        debuggerObj.OnDebug();
+        debuggerObj = newDebuggerObj;
     }
 
-    public void Update()
+    void Update()
     {
         debuggerObj.OnDebug();
     }

@@ -15,6 +15,6 @@ public class PlayerHandler : ScriptableObject
 
     public void OnRun()
     {
-        playerDataObj.Run()
+        playerDataObj.Run();
     }
 }
