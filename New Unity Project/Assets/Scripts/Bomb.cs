@@ -10,7 +10,7 @@ public class Bomb : MonoBehaviour
     public UnityEvent Event;
     public float delay = 3f, countdown;
     public GameObject explosionEffect;
-    public bool hasExploded = false;
+    public bool hasExploded = false, inDanger;
     public float blastRadius = 5f, force = 700f;
 
     // Start is called before the first frame update
@@ -18,6 +18,23 @@ public class Bomb : MonoBehaviour
     {
         countdown = delay;
     }
+    
+    
+    public void OnTriggerEnter(Collider other)
+        {
+            inDanger = true;
+        }
+
+    public void OnTriggerStay(Collider other)
+    {
+        inDanger = true;
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        inDanger = false;
+    }
+
 
     // Update is called once per frame
     private void Update()
@@ -51,7 +68,13 @@ public class Bomb : MonoBehaviour
                     dest.Destruct();
                 }
             }
-               
+
+            if (inDanger == true && countdown <= 0)
+            {
+                Event.Invoke();
+            }
+            
             Destroy(gameObject);
         }
+   
 }
