@@ -10,8 +10,9 @@ public class Bomb : MonoBehaviour
     public UnityEvent Event;
     public float delay = 3f, countdown;
     public GameObject explosionEffect;
-    public bool hasExploded = false, inDanger;
+    public bool hasExploded = false, inDanger = false;
     public float blastRadius = 5f, force = 700f;
+    //private Unityevent damage;
 
     // Start is called before the first frame update
     private void Start()
