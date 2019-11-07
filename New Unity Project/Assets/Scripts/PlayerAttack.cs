@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,16 +7,27 @@ using UnityEngine.Events;
 public class PlayerAttack : MonoBehaviour
 {
     public GameObject throwableItem;
-    public UnityEvent MeleeAttack;
+    private float timeToAttack, attackRecovery, attackRange;
+    public Transform attackPosition;
+    public SphereCollider attackArea;
 
     private void Update()
     {
         if (Input.GetKeyUp(KeyCode.E))
             Instantiate(throwableItem, transform.position, transform.rotation);
-    }
 
-    private void OnMousedDown()
-    {
-        MeleeAttack.Invoke();
+        if (attackRecovery <= 0)
+        {
+            if (Input.GetKey(KeyCode.F))
+            {
+                Instantiate(attackArea, transform.position, transform.rotation);
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            attackRecovery -= Time.deltaTime;
+        }
     }
+    
 }
