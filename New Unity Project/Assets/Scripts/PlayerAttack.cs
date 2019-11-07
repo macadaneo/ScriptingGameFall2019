@@ -6,6 +6,7 @@ using UnityEngine.Events;
 public class PlayerAttack : MonoBehaviour
 {
     public GameObject throwableItem;
+    public UnityEvent MeleeAttack;
 
     private void Update()
     {
@@ -13,4 +14,8 @@ public class PlayerAttack : MonoBehaviour
             Instantiate(throwableItem, transform.position, transform.rotation);
     }
 
+    private void OnMousedDown()
+    {
+        MeleeAttack.Invoke();
+    }
 }
