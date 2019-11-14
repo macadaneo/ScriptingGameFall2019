@@ -1554,7 +1554,7 @@ GameObject:
   - component: {fileID: 486462463}
   - component: {fileID: 486462465}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: NavMesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1588,7 +1588,7 @@ MonoBehaviour:
   m_OverrideVoxelSize: 0
   m_VoxelSize: 0.16666667
   m_BuildHeightMesh: 0
-  m_NavMeshData: {fileID: 23800000, guid: 31c28162dabd94e43967576ec11fa037, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 7e5986c57e934cf4ba401a6b41c9901b, type: 2}
 --- !u!4 &486462464
 Transform:
   m_ObjectHideFlags: 0
@@ -2527,8 +2527,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 29.836773
-  orthographic: 0
-  orthographic size: 18.00823
+  orthographic: 1
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2551,13 +2551,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731292625}
-  m_LocalRotation: {x: 0.067525424, y: -0, z: -0, w: 0.99771756}
-  m_LocalPosition: {x: 6.28, y: 11.39, z: -50.8}
+  m_LocalRotation: {x: 0.13837405, y: -0, z: -0, w: 0.99038005}
+  m_LocalPosition: {x: -8.3, y: 4.2, z: -11.2}
   m_LocalScale: {x: 0.26086, y: -4.8487, z: -4.8487}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 7.7440004, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 15.908001, y: 0, z: 0}
 --- !u!1001 &733260995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3327,7 +3327,7 @@ GameObject:
   - component: {fileID: 928517798}
   - component: {fileID: 928517797}
   - component: {fileID: 928517796}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DestructWall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3775,7 +3775,7 @@ GameObject:
   - component: {fileID: 1156181154}
   - component: {fileID: 1156181153}
   - component: {fileID: 1156181152}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DestructWall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4758,7 +4758,7 @@ GameObject:
   - component: {fileID: 1633918343}
   - component: {fileID: 1633918338}
   - component: {fileID: 1633918339}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DestructWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
