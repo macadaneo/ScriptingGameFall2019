@@ -57,6 +57,7 @@
             <e p="AgentHandler.cs" t="Include" />
             <e p="AiMouseEvents.cs" t="Include" />
             <e p="AINav.cs" t="Include" />
+            <e p="EnemyController.cs" t="Include" />
             <e p="Vector3Data.cs" t="Include" />
           </e>
           <e p="ApplyForce.cs" t="Include" />
@@ -70,11 +71,11 @@
             <e p="GameArtCollection.cs" t="Include" />
             <e p="Lists.cs" t="Include" />
           </e>
+          <e p="Coroutines.cs" t="Include" />
           <e p="Debugger.cs" t="Include" />
           <e p="DebuggerHandler.cs" t="Include" />
           <e p="Destructible.cs" t="Include" />
           <e p="DogClass.cs" t="Include" />
-          <e p="EnemyController.cs" t="Include" />
           <e p="EnumSwitch.cs" t="Include" />
           <e p="floatData.cs" t="Include" />
           <e p="Funtions.cs" t="Include" />
