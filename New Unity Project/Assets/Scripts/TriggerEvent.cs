@@ -6,11 +6,15 @@ using UnityEngine.Events;
 
 public class TriggerEvent : MonoBehaviour
 {
-    public UnityEvent triggerEvent;
+    public UnityEvent startEvent, endEvent;
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {
-        triggerEvent.Invoke();
+        startEvent.Invoke();
     }
 
+    private void OnTriggerExit(Collider other)
+    {
+        endEvent.Invoke();
+    }
 }
