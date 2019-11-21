@@ -8,17 +8,22 @@ public class PlayerAttack : MonoBehaviour
 {
     public GameObject throwableItem, attackArea;
     public float attackRecovery;
-    private bool recovering;
+    private bool recovering; 
+    private Vector3 attackRange = new Vector3 (2, 0, 0);
+  
+
+   
     private void Update()
     {
+
         if (Input.GetKeyUp(KeyCode.E))
-            Instantiate(throwableItem, transform.position, transform.rotation);
+            Instantiate(throwableItem, transform.position + attackRange, transform.rotation);
 
         if (attackRecovery <= 0 && !recovering)
         {
             if (Input.GetKey(KeyCode.F))
             {
-                Instantiate(attackArea, transform.position, Quaternion.identity);
+                Instantiate(attackArea, transform.position + attackRange, Quaternion.identity);
                 attackRecovery = 1.5f;
                 recovering = true;
             }
@@ -29,5 +34,4 @@ public class PlayerAttack : MonoBehaviour
             recovering = false;
         }
     }
-    
 }
