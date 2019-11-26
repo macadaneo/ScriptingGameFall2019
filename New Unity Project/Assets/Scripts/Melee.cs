@@ -2,12 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Melee : MonoBehaviour
 {
     public float delay = .5f, countdown;
-    public Destructible Hit;
     public float HitBox = 1.5f;
+    private UnityEvent melee;
       public void Start()
        {
            countdown = delay;
@@ -22,21 +23,5 @@ public class Melee : MonoBehaviour
               Destroy(gameObject);
           }
           
-    }
-
-    private void Explode()
-    {
-        Debug.Log("Boom!");
-
-        Collider[] colliders = Physics.OverlapSphere(transform.position, HitBox);
-
-        foreach (Collider nearbyObject in colliders)
-        {
-            Destructible dest = nearbyObject.GetComponent<Destructible>();
-            if (dest != null)
-            {
-                dest.OnHit();
-            }
-        }
     }
 }

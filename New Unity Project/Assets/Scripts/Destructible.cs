@@ -16,10 +16,10 @@ public class Destructible : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void OnHit()
+    public void OnTriggerEnter()
     {
+        Debug.Log("Hit!");
         EnvoHealth -= .1f;
-
         if (EnvoHealth <= 0)
         {
             Destruct();
