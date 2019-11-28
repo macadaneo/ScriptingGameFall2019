@@ -13,7 +13,7 @@ public class PlayerAttack : MonoBehaviour
   
 
    
-    private void Update()
+    private void Update() //Need to fix this also refrence Bomb scripts.
     {
 
         if (Input.GetKeyUp(KeyCode.E))
