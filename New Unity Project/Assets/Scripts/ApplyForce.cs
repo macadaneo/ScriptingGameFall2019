@@ -7,16 +7,18 @@ using UnityEngine;
 public class ApplyForce : MonoBehaviour
 {
     private Rigidbody rb;
-    public Vector3 forces;
+    public Vector3Data forceDirection;
+    public float force = 3f;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        rb.AddForce(forceDirection.value*force);
     }
 
-    private void OnCollisionEnter(Collision other)
+    private void OnCollision(Collision other)
     {
-        rb.AddForce(0,30f,0);
+        
     }
 }
