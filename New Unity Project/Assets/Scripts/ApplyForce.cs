@@ -16,9 +16,4 @@ public class ApplyForce : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         rb.AddForce(forceDirection.value*force);
     }
-
-    private void OnCollision(Collision other)
-    {
-        
-    }
 }

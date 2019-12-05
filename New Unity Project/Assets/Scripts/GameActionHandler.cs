@@ -6,15 +6,15 @@ using UnityEngine.Events;
 
 public class GameActionHandler : MonoBehaviour
 {
-    public GameAction GameActionObj;
-    public UnityEvent HandlerEvent;
+    public GameAction gameActionObj;
+    public UnityEvent handlerEvent;
     private void Start()
     {
-        GameActionObj.action = RaiseHandler;
+        gameActionObj.action = RaiseHandler;
     }
 
     public void RaiseHandler()
     {
-       HandlerEvent.Invoke(); 
+       handlerEvent.Invoke(); 
     }
 }
