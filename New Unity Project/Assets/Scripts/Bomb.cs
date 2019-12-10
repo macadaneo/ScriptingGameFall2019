@@ -47,35 +47,36 @@ public class Bomb : MonoBehaviour
             hasExploded = true;
         }
     }
-    
+
     private void Explode()
     {
         Debug.Log("Boom!");
-            Instantiate(explosionEffect, transform.position, transform.rotation);
+        Instantiate(explosionEffect, transform.position, transform.rotation);
 
-            Collider[] colliders = Physics.OverlapSphere(transform.position, blastRadius);
+        Collider[] colliders = Physics.OverlapSphere(transform.position, blastRadius);
 
-            foreach (Collider nearbyObject in colliders)
+        foreach (Collider nearbyObject in colliders)
+        {
+            Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+            if (rb != null)
             {
-                Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-                if (rb != null)
-                {
-                    rb.AddExplosionForce(force, transform.position, blastRadius);
-                }
-
-                Destructible dest = nearbyObject.GetComponent<Destructible>();
-                if (dest != null)
-                {
-                    dest.Destruct();
-                }
+                rb.AddExplosionForce(force, transform.position, blastRadius);
             }
 
-            if (inDanger == true && countdown <= 0)
+            Destructible dest = nearbyObject.GetComponent<Destructible>();
+            if (dest != null)
             {
-                Event.Invoke();
+                dest.Destruct();
             }
-            
-            Destroy(gameObject);
         }
-   
+
+        if (inDanger == true && countdown <= 0)
+        {
+            Event.Invoke();
+        }
+
+        Destroy(gameObject);
+
+    }
 }
+//made with help from brackeys

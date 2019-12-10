@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class PlayerAttack : MonoBehaviour
 {
     public GameObject throwableItem, attackArea;
+    public float throwForce = 40f;
     public float attackRecovery;
     private bool recovering; 
     private Vector3 attackRange = new Vector3 (2, 0, 0);
@@ -17,7 +18,16 @@ public class PlayerAttack : MonoBehaviour
     {
 
         if (Input.GetKeyUp(KeyCode.E))
-            Instantiate(throwableItem, transform.position + attackRange, transform.rotation);
+        {
+            ThrowBomb();
+        }
+
+        void ThrowBomb()
+        {
+            GameObject bomb = Instantiate(throwableItem, transform.position + attackRange, transform.rotation);
+            Rigidbody rb = bomb.GetComponent<Rigidbody>();
+            rb.AddForce(transform.right * throwForce, ForceMode.VelocityChange);
+        }
 
         if (attackRecovery <= 0 && !recovering)
         {
@@ -35,3 +45,4 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 }
+//made with help from Brackeys

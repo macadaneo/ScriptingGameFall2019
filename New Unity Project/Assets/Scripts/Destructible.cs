@@ -6,7 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(ParticleSystem))]
 public class Destructible : MonoBehaviour
 {
-    public float EnvoHealth = .3f;
+    //public float EnvoHealth = .3f;
     public ParticleSystem rubble; 
     
 
@@ -16,7 +16,7 @@ public class Destructible : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void OnTriggerEnter()
+  /*  public void OnTriggerEnter()
     {
         Debug.Log("Hit!");
         EnvoHealth -= .1f;
@@ -24,5 +24,5 @@ public class Destructible : MonoBehaviour
         {
             Destruct();
         }
-    }
+    }*/
 }

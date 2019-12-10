@@ -13,7 +13,7 @@ public class ApplyForce : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
-        rb.AddForce(forceDirection.value*force);
+    //    rb = GetComponent<Rigidbody>();
+   //     rb.AddForce(forceDirection.value*force);
     }
 }
