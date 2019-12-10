@@ -50,6 +50,7 @@
             <e p="NavMeshSurface.cs" t="Include" />
           </e>
         </e>
+        <e p="Patrol.cs" t="Include" />
         <e p="Resources" t="Include">
           <e p="Players" t="Include">
             <e p="PlayerHandler.cs" t="Include" />
